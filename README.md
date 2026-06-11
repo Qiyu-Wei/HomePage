@@ -3,4 +3,4 @@ Qiyu Wei
 
 Supported by Hugo and Netlify.
 
-update by Jun. 2024
+update by Jun. 2026
