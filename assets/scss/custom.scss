@@ -1,0 +1,459 @@
+/* Academicpages-inspired presentation layer for the Hugo site. */
+
+:root {
+  --ap-base: #2f7f93;
+  --ap-link: #52adc8;
+  --ap-link-hover: #235f6e;
+  --ap-text: #494e52;
+  --ap-text-light: #9ba1a5;
+  --ap-heading: #252a2d;
+  --ap-border: #f2f3f3;
+  --ap-border-strong: #bdc1c4;
+  --ap-bg: #ffffff;
+  --ap-footer-bg: #f2f3f3;
+  --ap-radius: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ap-bg);
+  color: var(--ap-text);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--ap-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover,
+a:focus {
+  color: var(--ap-link-hover);
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ap-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.navbar {
+  background: var(--ap-bg) !important;
+  border-bottom: 1px solid var(--ap-border);
+  box-shadow: none;
+  min-height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.navbar .container {
+  max-width: 1280px;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: var(--ap-text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  border-bottom: 2px solid transparent;
+  margin: 0 0.55rem;
+  padding: 0.5rem 0;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  background: transparent;
+  border-bottom-color: var(--ap-heading);
+  color: var(--ap-heading);
+}
+
+.page-wrapper {
+  min-height: calc(100vh - 70px);
+}
+
+.home-section {
+  background: var(--ap-bg) !important;
+  padding: 2.6rem 0;
+}
+
+.home-section .container {
+  max-width: 1280px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#about {
+  padding-top: 2rem;
+}
+
+.section-heading h1,
+.wg-about-biography h1 {
+  border-bottom: 1px solid var(--ap-border);
+  color: var(--ap-heading);
+  font-size: 1.563em;
+  font-weight: 700;
+  margin: 0 0 1.15em;
+  padding-bottom: 0.5em;
+}
+
+.section-heading p {
+  color: var(--ap-text-light);
+}
+
+#profile {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+#profile .avatar {
+  border: 1px solid var(--ap-border-strong);
+  border-radius: 50%;
+  box-shadow: none;
+  height: 175px;
+  max-width: 175px;
+  object-fit: cover;
+  padding: 5px;
+  width: 175px;
+}
+
+.portrait-title h2 {
+  color: var(--ap-heading);
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0.85rem 0 0.65rem;
+}
+
+.portrait-title h3 {
+  color: var(--ap-text);
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 0.4rem;
+}
+
+#profile .network-icon {
+  display: block;
+  font-size: 0.75em;
+  margin-top: 1rem;
+  padding-left: 0;
+  text-align: left;
+}
+
+#profile .network-icon li {
+  display: block;
+  margin: 0 0 0.35rem !important;
+  text-align: left;
+  width: 100%;
+}
+
+#profile .network-icon a {
+  align-items: center;
+  color: var(--ap-text);
+  display: inline-flex;
+  gap: 0.45rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+#profile .network-icon a:hover,
+#profile .network-icon a:focus {
+  color: var(--ap-link-hover);
+  text-decoration: underline;
+}
+
+#profile .network-icon .big-icon {
+  color: var(--ap-text-light);
+  font-size: 0.95rem;
+  width: 1.15rem;
+}
+
+#profile .network-icon a[aria-label="envelope"]::after {
+  content: "Email";
+}
+
+#profile .network-icon a[aria-label="graduation-cap"]::after {
+  content: "Google Scholar";
+}
+
+#profile .network-icon a[aria-label="github"]::after {
+  content: "GitHub";
+}
+
+#profile .network-icon a[aria-label="cv"]::after {
+  content: "CV";
+}
+
+.article-style {
+  color: var(--ap-text);
+}
+
+.article-style p,
+.card-text,
+.pub-list-item.view-citation {
+  font-size: 1rem;
+}
+
+.section-subheading {
+  color: var(--ap-heading);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.ul-interests,
+.ul-edu {
+  margin-bottom: 1rem;
+}
+
+.ul-interests li,
+.ul-edu li {
+  margin-bottom: 0.5em;
+}
+
+.ul-interests .fa-li,
+.ul-edu .fa-li {
+  color: var(--ap-text-light);
+}
+
+.card {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.experience {
+  border-bottom: 1px solid var(--ap-border);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.wg-experience .experience > .col-auto {
+  display: none !important;
+}
+
+.wg-experience .experience > .col {
+  padding-left: 0;
+}
+
+.experience .card-body,
+.course .card-body {
+  padding: 0;
+}
+
+.experience .card img {
+  border: 1px solid var(--ap-border);
+  border-radius: var(--ap-radius);
+  padding: 4px;
+}
+
+.exp-title {
+  color: var(--ap-heading) !important;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.exp-company,
+.exp-meta,
+.article-metadata,
+.card-subtitle {
+  color: var(--ap-text-light) !important;
+  font-size: 0.75em;
+}
+
+.card-text {
+  color: var(--ap-text);
+  margin-top: 0.75rem;
+}
+
+.badge-pill.border {
+  border-color: var(--ap-border-strong) !important;
+}
+
+.exp-fill {
+  background: var(--ap-base) !important;
+}
+
+.course.card {
+  border-bottom: 1px solid var(--ap-border);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.wg-collection .callout-note,
+.wg-collection .alert,
+.wg-collection .alert-note {
+  background: var(--ap-footer-bg);
+  border: 1px solid var(--ap-border);
+  border-radius: var(--ap-radius);
+  box-shadow: none;
+  color: var(--ap-text);
+  font-size: 0.85em;
+  margin-bottom: 1.3rem;
+}
+
+.wg-collection .alert i,
+.wg-collection .alert .fa,
+.wg-collection .alert .fas {
+  color: var(--ap-text-light);
+}
+
+.pub-list-item.view-citation {
+  border-bottom: 1px solid var(--ap-border);
+  color: var(--ap-text);
+  line-height: 1.5;
+  margin-bottom: 1rem !important;
+  padding: 0 0 1rem;
+}
+
+.pub-list-item .pub-icon {
+  color: var(--ap-text-light);
+  margin-right: 0.35rem;
+}
+
+.pub-list-item a {
+  font-weight: 700;
+}
+
+.pub-list-item p {
+  margin-top: 0.45rem;
+}
+
+.btn-links .btn,
+.pub-list-item p .btn,
+.article-style .btn {
+  background: var(--ap-base);
+  border: 0 !important;
+  border-radius: var(--ap-radius);
+  color: #fff !important;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+  padding: 0.45em 0.8em;
+  text-decoration: none;
+}
+
+.btn-links .btn:hover,
+.pub-list-item p .btn:hover,
+.article-style .btn:hover {
+  background: #252a2d;
+  color: #fff !important;
+}
+
+.see-all {
+  margin-top: 1rem;
+}
+
+.see-all a {
+  color: var(--ap-link);
+  font-weight: 700;
+}
+
+.page-footer,
+footer {
+  background: var(--ap-footer-bg);
+  border-top: 1px solid var(--ap-border);
+}
+
+body.dark {
+  --ap-base: #71bfd4;
+  --ap-link: #71bfd4;
+  --ap-link-hover: #9ed8e7;
+  --ap-text: #d7dcdf;
+  --ap-text-light: #9ba6ac;
+  --ap-heading: #ffffff;
+  --ap-border: #30383d;
+  --ap-border-strong: #49545a;
+  --ap-bg: #14181a;
+  --ap-footer-bg: #101315;
+  background: var(--ap-bg);
+}
+
+body.dark .navbar,
+body.dark .home-section {
+  background: var(--ap-bg) !important;
+}
+
+body.dark .wg-collection .callout-note {
+  background: #101315;
+}
+
+@media (min-width: 992px) {
+  #about .col-lg-4 {
+    flex: 0 0 22%;
+    max-width: 22%;
+  }
+
+  #about .col-lg-8 {
+    flex: 0 0 78%;
+    max-width: 78%;
+    padding-left: 3rem;
+  }
+
+  .home-section .section-heading.col-lg-4 {
+    flex: 0 0 22%;
+    max-width: 22%;
+  }
+
+  .home-section .col-lg-8 {
+    flex: 0 0 78%;
+    max-width: 78%;
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    min-height: 56px;
+  }
+
+  .home-section {
+    padding: 2rem 0;
+  }
+
+  #profile {
+    text-align: center;
+  }
+
+  #profile .network-icon {
+    text-align: center;
+  }
+
+  #profile .network-icon li {
+    display: inline-block;
+    margin: 0 0.45rem 0.45rem 0;
+    text-align: center;
+    width: auto;
+  }
+
+  #profile .network-icon a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-heading h1,
+  .wg-about-biography h1 {
+    font-size: 1.35rem;
+  }
+
+  #profile .avatar {
+    height: 140px;
+    width: 140px;
+  }
+}

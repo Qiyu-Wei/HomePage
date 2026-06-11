@@ -22,20 +22,20 @@ organizations:
     url: https://www.cs.manchester.ac.uk/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include AI in Semiconductor, 3D Deep Learning and Bayesian Optimisation.
+bio: My research interests include AI in Semiconductor, LLM agents and Bayesian Optimisation.
 
 # Interests to show in About widget
 interests:
   - Statistical Machine Learning
   - Bayesian Optimization
-  - Deep Learning
+  - LLM agents
 
 # Education to show in About widget
 education:
   courses:
     - course: PhD 
       institution: University of Manchester
-      year: 2024-
+      year: 2024-2028 (Expected)
     - course: MSc
       institution: Shanghai University
       year: 2021-2024
@@ -56,16 +56,10 @@ social:
     link: https://scholar.google.com/citations?user=nyJpYqoAAAAJ&hl=en&oi=ao
   - icon: github
     icon_pack: fab
-    link: https://github.com/Luke-Wei
+    link: https://github.com/Qiyu-Wei
   # - icon: linkedin
   #   icon_pack: fab
   #   link: https://www.linkedin.com/
-  # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
-  # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/weiqiyu_CV.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'weiqy412@gmail.com'
@@ -73,5 +67,5 @@ email: 'weiqy412@gmail.com'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a PhD student with the Department of Computer Science, The University of Manchester, under the supervision of Dr. Mauricio Alvarez and Prof. Richard Allmendinger. My research interests include Probabilistic Machine Learning, Bayesian Optimization, and Deep Learning. Prior to my enrollment at UoM, I earned my Master's degree from Shanghai University. I worked as a Research Assistant (Supported by SIPGA scholarship) at the Institute of Infocomm Research, A*Star, Singapore in 2023.
+I am a PhD student with the Department of Computer Science, The University of Manchester, under the supervision of Dr. Mauricio Alvarez and Prof. Richard Allmendinger. My research interests include Probabilistic Machine Learning, Bayesian Optimization, and LLM agents. Prior to my enrollment at UoM, I earned my Master's degree from Shanghai University. I worked as a Research Assistant (Supported by SIPGA scholarship) at the Institute of Infocomm Research, A*Star, Singapore in 2023.
 {style="text-align: justify;"}

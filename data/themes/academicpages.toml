@@ -1,0 +1,32 @@
+# Theme metadata
+name = "Academicpages"
+
+[light]
+  primary = "#2f7f93"
+  link = "#52adc8"
+  link_hover = "#235f6e"
+  link_decoration = "underline"
+
+  menu_primary = "#ffffff"
+  menu_text = "#494e52"
+  menu_text_active = "#252a2d"
+  menu_title = "#252a2d"
+
+  background = "#ffffff"
+  home_section_odd = "#ffffff"
+  home_section_even = "#ffffff"
+
+[dark]
+  primary = "#71bfd4"
+  link = "#71bfd4"
+  link_hover = "#9ed8e7"
+  link_decoration = "underline"
+
+  menu_primary = "#14181a"
+  menu_text = "#d7dcdf"
+  menu_text_active = "#ffffff"
+  menu_title = "#ffffff"
+
+  background = "#14181a"
+  home_section_odd = "#14181a"
+  home_section_even = "#14181a"
